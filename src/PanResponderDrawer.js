@@ -147,14 +147,6 @@ export default class PanResponderDrawer extends Component {
         })
     }
 
-    triggerPositionCheck(gestureState) {
-        let {dx, dy, vx, vy, v0} = gestureState;
-
-        if (v0 < 20) {
-
-        }
-    }
-
     componentWillUnmount() {
         this.state.pan.removeListener(this.listener);
     }
